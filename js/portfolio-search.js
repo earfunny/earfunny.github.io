@@ -46,7 +46,18 @@
   }
 
   form.addEventListener("submit", function (event) {
+    event.preventDefault();
     updateResults();
+    const query = input.value.trim();
+
+    if (!query) {
+      input.focus();
+      return;
+    }
+
+    const searchUrl = new URL(form.action);
+    searchUrl.searchParams.set("q", query);
+    window.location.assign(searchUrl.toString());
   });
   input.addEventListener("input", updateResults);
   updateResults();

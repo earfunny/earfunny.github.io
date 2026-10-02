@@ -4,6 +4,7 @@ description: >-
   Portfolio and blog of earfunny — software developer, web enthusiast, and AI explorer.
 baseurl: ""
 url: "https://earfunny.github.io"
+repository: earfunny/earfunny.github.io
 
 timezone: Asia/Jakarta
 markdown: kramdown

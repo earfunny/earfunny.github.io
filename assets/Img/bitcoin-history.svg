@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" fill="none">
+  <defs>
+    <linearGradient id="background" x1="80" y1="40" x2="1520" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10263A"/>
+      <stop offset="1" stop-color="#24445A"/>
+    </linearGradient>
+    <linearGradient id="coin" x1="1034" y1="116" x2="1420" y2="514" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE2A3"/>
+      <stop offset=".52" stop-color="#F5A936"/>
+      <stop offset="1" stop-color="#C66A18"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="1010" y1="90" x2="1442" y2="544" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0CB"/>
+      <stop offset="1" stop-color="#DA8425"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 430 -640 0 1228 320)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E99835" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#E99835" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#C5D3DB" fill-opacity=".23"/>
+    </pattern>
+  </defs>
+  <path fill="url(#background)" d="M0 0h1600v640H0z"/>
+  <path fill="url(#glow)" d="M0 0h1600v640H0z"/>
+  <path fill="url(#dots)" d="M0 0h1600v640H0z" opacity=".55"/>
+  <g stroke="#DCE7ED" stroke-opacity=".24" stroke-width="2">
+    <path d="m78 466 190-118 157 72 190-165 164 76"/>
+    <path d="m98 210 164 82 135-94 170 80 118-75"/>
+    <path d="m367 575 94-155 154 35 120-124"/>
+  </g>
+  <g fill="#AFC4D0">
+    <circle cx="78" cy="466" r="6"/>
+    <circle cx="268" cy="348" r="6"/>
+    <circle cx="425" cy="420" r="6"/>
+    <circle cx="615" cy="255" r="6"/>
+    <circle cx="779" cy="331" r="6"/>
+    <circle cx="98" cy="210" r="6"/>
+    <circle cx="262" cy="292" r="6"/>
+    <circle cx="397" cy="198" r="6"/>
+    <circle cx="567" cy="278" r="6"/>
+    <circle cx="685" cy="203" r="6"/>
+    <circle cx="367" cy="575" r="6"/>
+    <circle cx="461" cy="420" r="6"/>
+    <circle cx="615" cy="455" r="6"/>
+    <circle cx="735" cy="331" r="6"/>
+  </g>
+  <circle cx="1228" cy="320" r="222" fill="#0A1D2D" fill-opacity=".3"/>
+  <circle cx="1228" cy="320" r="202" fill="#132D40" stroke="url(#edge)" stroke-width="12"/>
+  <circle cx="1228" cy="320" r="176" fill="url(#coin)" stroke="#FFE7B7" stroke-opacity=".78" stroke-width="3"/>
+  <circle cx="1228" cy="320" r="154" stroke="#A85B19" stroke-opacity=".45" stroke-width="2"/>
+  <text x="1228" y="390" fill="#7E4518" font-family="Arial, Helvetica, sans-serif" font-size="240" font-weight="700" text-anchor="middle">₿</text>
+  <path d="M1221 164v312M1255 164v312" stroke="#7E4518" stroke-linecap="round" stroke-width="15" opacity=".86"/>
+  <path d="M1080 240h28M1348 400h28" stroke="#FFF0D0" stroke-linecap="round" stroke-width="5" opacity=".66"/>
+</svg>

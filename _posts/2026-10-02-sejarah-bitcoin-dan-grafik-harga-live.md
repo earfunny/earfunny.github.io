@@ -6,6 +6,8 @@ author: earfunny
 categories: [Bitcoin, Cryptocurrency, Sejarah]
 tags: [Bitcoin, BTC, blockchain, cryptocurrency, harga Bitcoin]
 description: "Mengenal sejarah Bitcoin sejak whitepaper Satoshi Nakamoto, transaksi awal, halving, hingga perkembangannya sebagai aset digital global. Dilengkapi grafik harga BTC/USD live."
+cover_image: /assets/Img/bitcoin-history.svg
+cover_image_alt: Ilustrasi koin Bitcoin berwarna emas dengan pola jaringan blockchain
 ---
 
 Bitcoin dimulai sebagai gagasan uang elektronik yang dapat dikirim langsung antarpengguna tanpa perantara. Sejak diperkenalkan pada 2008, jaringan terbuka ini berkembang menjadi salah satu aset digital paling dikenal di dunia. Berikut linimasa singkat sejarahnya dan grafik harga Bitcoin yang diperbarui dari pasar.

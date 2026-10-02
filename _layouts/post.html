@@ -3,7 +3,19 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
-  <p>{{ page.date | date: "%-d %B %Y" }}</p>
-  {{ content }}
+  <header class="post-header">
+    {% if page.cover_image %}
+    <img class="post-cover" src="{{ page.cover_image | relative_url }}" alt="{{ page.cover_image_alt | default: page.title | escape }}">
+    {% endif %}
+    <div class="post-heading">
+      {% if page.categories %}
+      <p class="post-category">{{ page.categories | first }}</p>
+      {% endif %}
+      <h1>{{ page.title }}</h1>
+      <p class="post-meta">Oleh {{ page.author | default: site.title }} <span aria-hidden="true">·</span> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
+    </div>
+  </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
 </article>

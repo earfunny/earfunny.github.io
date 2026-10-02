@@ -84,6 +84,11 @@
   text-underline-offset: 0.18em;
 }
 
+.social-tiktok-icon {
+  width: 1.25em;
+  height: 1.25em;
+}
+
 .blog-preview {
   background: #f5f8fb;
 }

@@ -5,18 +5,31 @@
   const input = document.getElementById("site-search-input");
   const summary = document.getElementById("search-summary");
   const emptyState = document.getElementById("search-empty");
+  const bingSearchLink = document.getElementById("bing-search-link");
 
-  if (!form || !input || !summary || !emptyState) {
+  if (!form || !input || !summary || !emptyState || !bingSearchLink) {
     return;
   }
 
   const items = Array.from(document.querySelectorAll("[data-search-item]"));
   const sections = Array.from(document.querySelectorAll("[data-search-section]"));
 
+  function updateBingLink() {
+    const query = input.value.trim();
+    const searchUrl = new URL(query ? form.action : "https://www.bing.com/");
+
+    if (query) {
+      searchUrl.searchParams.set("q", query);
+    }
+
+    bingSearchLink.href = searchUrl.toString();
+  }
+
   function updateResults() {
     const query = input.value.trim().toLocaleLowerCase();
     let resultCount = 0;
 
+    updateBingLink();
     items.forEach(function (item) {
       const searchableText = (
         (item.dataset.searchText || "") + " " + (item.textContent || "")

@@ -77,6 +77,13 @@
   font-size: 0.9rem;
 }
 
+.search-help a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .blog-preview {
   background: #f5f8fb;
 }

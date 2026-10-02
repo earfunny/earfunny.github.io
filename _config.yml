@@ -1,0 +1,38 @@
+title: ®v4n7uk1©™
+email: vanjuki81@gmail.com
+description: >-
+  Portfolio and blog of earfunny — software developer, web enthusiast, and AI explorer.
+baseurl: ""
+url: "https://earfunny.github.io"
+
+timezone: Asia/Jakarta
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: earfunny
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - .git
+  - .github

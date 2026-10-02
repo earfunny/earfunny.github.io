@@ -1,0 +1,150 @@
+[hidden] {
+  display: none !important;
+}
+
+.masthead {
+  min-height: 72vh;
+  justify-content: center;
+}
+
+.masthead-avatar {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.masthead-heading {
+  max-width: 900px;
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  line-height: 1.08;
+}
+
+.portfolio-search {
+  display: flex;
+  width: min(640px, 100%);
+  margin: 2rem auto 0;
+  padding: 0.4rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 12px 36px rgba(17, 34, 48, 0.2);
+}
+
+.portfolio-search:focus-within {
+  outline: 3px solid rgba(255, 255, 255, 0.45);
+}
+
+.portfolio-search input {
+  min-width: 0;
+  flex: 1;
+  padding: 0.85rem 1.15rem;
+  border: 0;
+  outline: 0;
+  color: #263746;
+  background: transparent;
+}
+
+.portfolio-search input::placeholder {
+  color: #6c7a86;
+}
+
+.portfolio-search button {
+  padding: 0.75rem 1.5rem;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  background: #0063b2;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.portfolio-search button:hover,
+.portfolio-search button:focus-visible {
+  background: #004d8a;
+}
+
+.search-summary {
+  min-height: 1.5rem;
+  margin: 1rem 0 0;
+  color: #fff;
+}
+
+.blog-preview {
+  background: #f5f8fb;
+}
+
+.section-intro {
+  margin-top: 0.75rem;
+  color: #62717e;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid #e2e9ef;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(24, 48, 68, 0.06);
+}
+
+.article-date {
+  margin-bottom: 0.6rem;
+  color: #687887;
+  font-size: 0.85rem;
+}
+
+.article-card h3 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.article-card h3 a {
+  color: #174d73;
+}
+
+.article-card > p:not(.article-date) {
+  flex: 1;
+  color: #4c5c68;
+}
+
+.article-link,
+.blog-index-link {
+  color: #0063b2;
+  font-weight: 700;
+}
+
+.search-empty {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #e2e9ef;
+  border-radius: 1rem;
+  color: #4c5c68;
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .masthead {
+    min-height: 80vh;
+  }
+
+  .masthead-avatar {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .portfolio-search {
+    padding: 0.3rem;
+  }
+
+  .portfolio-search input {
+    padding-left: 0.75rem;
+  }
+
+  .portfolio-search button {
+    padding: 0.7rem 1rem;
+  }
+}

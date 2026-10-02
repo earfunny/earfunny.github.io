@@ -1,4 +1,5 @@
-
+---
+---
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,21 +10,24 @@
              </script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>🧐earfunny - portfolio🤗</title>
+        <meta name="description" content="Jelajahi portfolio, proyek, dan artikel teknologi earfunny.">
+        <meta name="author" content="earfunny">
+        <title>{{ site.title }} | Portfolio &amp; Blog</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-        <link href="css/styles.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/heading.css">
-        <link rel="stylesheet" href="css/body.css">
+        <link href="{{ '/css/styles.css' | relative_url }}" rel="stylesheet">
+        <link rel="stylesheet" href="{{ '/css/heading.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/css/body.css' | relative_url }}">
+        <link rel="stylesheet" href="{{ '/css/portfolio-search.css' | relative_url }}">
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
-            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img id="brandImage" src="assets/img/1672509231544.png" alt=""></a>
+            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img id="brandImage" src="{{ '/assets/Img/1672509231544.png' | relative_url }}" alt="Logo earfunny"></a>
                 <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ '/blog/' | relative_url }}">BLOG</a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">ABOUT</a>
                         </li>
@@ -35,20 +39,26 @@
         </nav>
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
-                <img class="masthead-avatar mb-5" src="assets/img/1672509204509.png" alt="">
-                <h1 class="masthead-heading mb-0">LET ME KNOW HOW</h1>
+                <img class="masthead-avatar mb-5" src="{{ '/assets/Img/1672509204509.png' | relative_url }}" alt="Ilustrasi profil earfunny">
+                <h1 class="masthead-heading mb-0">Temukan karya dan tulisan saya</h1>
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator - Trader - Gamers - Dreamer </p>
+                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Portfolio, proyek, dan artikel teknologi dalam satu tempat.</p>
+                <form class="portfolio-search" id="site-search" role="search">
+                    <label class="sr-only" for="site-search-input">Cari portfolio dan artikel</label>
+                    <input id="site-search-input" name="q" type="search" placeholder="Cari proyek, keahlian, atau artikel..." autocomplete="off">
+                    <button type="submit" aria-label="Cari">Cari</button>
+                </form>
+                <p class="search-summary" id="search-summary" aria-live="polite" hidden></p>
             </div>
         </header>
-        <section class="page-section portfolio" id="portfolio">
+        <section class="page-section portfolio" id="portfolio" data-search-section>
             <div class="container">
                 <div class="text-center">
-                    <h2 class="page-section-heading text-secondary mb-0 d-inline-block">PORTFOLIO</h2>
+                    <h2 class="page-section-heading text-secondary mb-0 d-inline-block">Portfolio</h2>
                 </div>
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -57,51 +67,75 @@
                 </div>
                 <div class="row justify-content-center">
                     <!-- Portfolio Items-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5" data-search-item data-search-text="Log Cabin rumah kayu wooden house architecture desain ilustrasi">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="Log Cabin"/>
+                            </div><img class="img-fluid" src="{{ '/assets/Img/portfolio/cabin.png' | relative_url }}" alt="Log Cabin"/>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5" data-search-item data-search-text="Tasty Cake kue cake makanan food halal dessert ilustrasi">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/cake.png" alt="Tasty Cake"/>
+                            </div><img class="img-fluid" src="{{ '/assets/Img/portfolio/cake.png' | relative_url }}" alt="Tasty Cake"/>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5" data-search-item data-search-text="Circus Tent sirkus circus hiburan entertainment desain ilustrasi">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/circus.png" alt="Circus Tent"/>
+                            </div><img class="img-fluid" src="{{ '/assets/Img/portfolio/circus.png' | relative_url }}" alt="Circus Tent"/>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5" data-search-item data-search-text="Controller game gaming permainan hobi ilustrasi">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/game.png" alt="Controller"/>
+                            </div><img class="img-fluid" src="{{ '/assets/Img/portfolio/game.png' | relative_url }}" alt="Controller"/>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5" data-search-item data-search-text="Locked Safe investasi investment cryptocurrency crypto kripto trading ilustrasi">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/safe.png" alt="Locked Safe"/>
+                            </div><img class="img-fluid" src="{{ '/assets/Img/portfolio/safe.png' | relative_url }}" alt="Locked Safe"/>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5" data-search-item data-search-text="Submarine kapal selam ocean laut teknologi web web development ilustrasi">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div><img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="Submarine"/>
+                            </div><img class="img-fluid" src="{{ '/assets/Img/portfolio/submarine.png' | relative_url }}" alt="Submarine"/>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="page-section blog-preview" id="blog" data-search-section>
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="page-section-heading text-secondary mb-0 d-inline-block">Artikel terbaru</h2>
+                    <p class="section-intro">Tulisan tentang teknologi, web, dan AI.</p>
+                </div>
+                <div class="row justify-content-center">
+                    {% for post in site.posts %}
+                    <article class="col-md-6 col-lg-4 mb-4" data-search-item data-search-preview="{% if forloop.index <= 3 %}true{% else %}false{% endif %}" data-search-text="{{ post.title | escape }} {{ post.content | strip_html | normalize_whitespace | escape }}">
+                        <div class="article-card h-100">
+                            <p class="article-date">{{ post.date | date: "%-d %B %Y" }}</p>
+                            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                            <p>{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+                            <a class="article-link" href="{{ post.url | relative_url }}">Baca artikel <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </article>
+                    {% else %}
+                    <p class="col-12 text-center">Artikel baru akan segera hadir.</p>
+                    {% endfor %}
+                </div>
+                <p class="text-center"><a class="blog-index-link" href="{{ '/blog/' | relative_url }}">Lihat semua artikel</a></p>
+            </div>
+        </section>
+        <p class="search-empty" id="search-empty" role="status" hidden>Tidak ada hasil yang cocok. Coba kata kunci lain.</p>
         <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
@@ -116,7 +150,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="Log Cabin"/>
+                                    <img class="img-fluid rounded mb-5" src="{{ '/assets/Img/portfolio/cabin.png' | relative_url }}" alt="Log Cabin"/>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">Want to have a house, even if it's small, or made of wood, or even cardboard</p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
@@ -141,7 +175,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="Tasty Cake"/>
+                                    <img class="img-fluid rounded mb-5" src="{{ '/assets/Img/portfolio/cake.png' | relative_url }}" alt="Tasty Cake"/>
                                     <p class="mb-5">Even if you eat a little as long as it's halal, that's enough, rather than eating a lot and going to hell in the end</p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -165,7 +199,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="Circus Tent"/>
+                                    <img class="img-fluid rounded mb-5" src="{{ '/assets/Img/portfolio/circus.png' | relative_url }}" alt="Circus Tent"/>
                                     <p class="mb-5">Sometimes you need entertainment so that your mind doesn't get too bored, it makes your body relax and feel healthy</p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -189,7 +223,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="Controller"/>
+                                    <img class="img-fluid rounded mb-5" src="{{ '/assets/Img/portfolio/game.png' | relative_url }}" alt="Controller"/>
                                     <p class="mb-5">Playing to make a lot of money, it's my new hobby</p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -213,7 +247,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="Locked Safe"/>                          
+                                    <img class="img-fluid rounded mb-5" src="{{ '/assets/Img/portfolio/safe.png' | relative_url }}" alt="Locked Safe"/>
                                     <p class="mb-5">Invest in cryptocurrencies, maybe it will be better in the future, hopefully in the future cryptocurrencies will be used by all countries for legalized transactions</p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -237,7 +271,7 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="Submarine"/>                               
+                                    <img class="img-fluid rounded mb-5" src="{{ '/assets/Img/portfolio/submarine.png' | relative_url }}" alt="Submarine"/>
                                     <p class="mb-5">Want to dive into the ocean of web technology, because in the future this knowledge must be owned by everyone without exception</p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -319,8 +353,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>   
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>    
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="{{ '/js/scripts.js' | relative_url }}"></script>
+        <script src="{{ '/js/portfolio-search.js' | relative_url }}" defer></script>
     </body>
 </html>
